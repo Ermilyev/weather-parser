@@ -1,0 +1,12 @@
+D:\Projects\Github\weather-parser\Parser\Parser.Models\bin\Debug\net6.0\Parser.Models.deps.json
+D:\Projects\Github\weather-parser\Parser\Parser.Models\bin\Debug\net6.0\Parser.Models.dll
+D:\Projects\Github\weather-parser\Parser\Parser.Models\bin\Debug\net6.0\ref\Parser.Models.dll
+D:\Projects\Github\weather-parser\Parser\Parser.Models\bin\Debug\net6.0\Parser.Models.pdb
+D:\Projects\Github\weather-parser\Parser\Parser.Models\obj\Debug\net6.0\Parser.Models.csproj.AssemblyReference.cache
+D:\Projects\Github\weather-parser\Parser\Parser.Models\obj\Debug\net6.0\Parser.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Github\weather-parser\Parser\Parser.Models\obj\Debug\net6.0\Parser.Models.AssemblyInfoInputs.cache
+D:\Projects\Github\weather-parser\Parser\Parser.Models\obj\Debug\net6.0\Parser.Models.AssemblyInfo.cs
+D:\Projects\Github\weather-parser\Parser\Parser.Models\obj\Debug\net6.0\Parser.Models.csproj.CoreCompileInputs.cache
+D:\Projects\Github\weather-parser\Parser\Parser.Models\obj\Debug\net6.0\Parser.Models.dll
+D:\Projects\Github\weather-parser\Parser\Parser.Models\obj\Debug\net6.0\ref\Parser.Models.dll
+D:\Projects\Github\weather-parser\Parser\Parser.Models\obj\Debug\net6.0\Parser.Models.pdb
