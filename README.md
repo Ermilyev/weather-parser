@@ -1,19 +1,19 @@
-# Парсер погоды с gismeteo
+# Weather parser from gismeteo application
  
-Parser - система, которая предоставит информацию о погоде в выбранном городе на ближайшие 10 дней.
+Parser - a system that will provide information about the weather in the selected city for the next 10 days.
 
-Система состоит из:
+The system consists of:
 
-- База данных MySql (хранит информацию о погоде. Сервер по умолчанию = 'localhost', порт = '3306' пользователь = 'root', пароль = 'root' база данных = '4people')
-- Парсер (граббер) сайта http://www.gismeteo.ru/ (консольное приложение которое забирает данные о погоде по всем городам, представленным на главной странице сайта в блоке «Популярные пункты России» за 10 дней и сохраняет их в базе данных);
-- WebApi сервис (снабжает клиентов данными о погоде, прослойка между клиентским приложением и базой данных);
-- Клиентское приложение WinForms (отображает сведения о погоде в выбранном городе на указанную дату; клиентское приложение взаимодействует только c WebApi сервисом)
+- MySql database (stores weather information. Default server = 'localhost', port = '3306' user = 'root', password = 'root' database = 'forecast');
+- Parser (grabber) of the site http://www.gismeteo.ru/ (a console application that takes weather data for all cities presented on the main page of the site in the block "Popular points of Russia" for 10 days and saves them in the database);
+- WebApi service (provides clients with weather data, a layer between the client application and the database);
+- WPF client application (displays information about the weather in the selected city on the specified date; the client application interacts only with the WebApi service)
 
-## Развертывание
+## Deployment
 
-Системе требуется база данных Mysql на локальном хосте с пользователем = 'root' и паролем = 'root'
+The system needs a Mysql database on localhost with user='root' and password='root'
 
-## Построен с
+## Build with
 
 * [AutoMapper] - A convention-based object-object mapper.
 * [FluentValidation] - A validation library for .NET that uses a fluent interface to construct strongly-typed validation rules.
