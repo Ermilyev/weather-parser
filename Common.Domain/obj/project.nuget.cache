@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3jkc7agW3IZaMHfy0JwrPC4Mh08nD9ZbEu+DpPIG7kzMQXzyVFYN06LA50rOp8N7NXuWxKZqwCZZ3LqMHATenA==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Github\\weather-parser\\Parser\\Common.Domain\\Common.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aermi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0-preview.3.22175.1\\microsoft.entityframeworkcore.abstractions.7.0.0-preview.3.22175.1.nupkg.sha512"
+  ],
+  "logs": []
+}
