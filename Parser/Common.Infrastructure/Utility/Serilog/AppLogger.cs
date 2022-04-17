@@ -5,7 +5,7 @@ using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 using ILogger = Serilog.ILogger;
 
-namespace Common.Infrastructure.Utility.Logging;
+namespace Common.Infrastructure.Utility.Serilog;
 
 public class AppLogger
 {

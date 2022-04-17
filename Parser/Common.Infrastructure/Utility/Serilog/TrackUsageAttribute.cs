@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Common.Infrastructure.Utility.Logging;
+namespace Common.Infrastructure.Utility.Serilog;
 
 public class TrackUsageAttribute : ActionFilterAttribute
 {

@@ -2,7 +2,7 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 
-namespace Common.Infrastructure.Utility.Logging;
+namespace Common.Infrastructure.Utility.Serilog;
 
 public static class WebHelper
 {

@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Globalization;
 
-namespace Common.Infrastructure.Utility.Logging;
+namespace Common.Infrastructure.Utility.Serilog;
 
 public class PerfTracker
 {

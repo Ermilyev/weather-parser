@@ -3,7 +3,7 @@ using System.Net;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 
-namespace Common.Infrastructure.Utility.Logging;
+namespace Common.Infrastructure.Utility.Serilog;
 
 public class ExceptionHandler
 {
