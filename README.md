@@ -25,6 +25,6 @@ The system needs a Mysql database on localhost with user='root' and password='ro
 * [Microsoft.Extensions.Hosting] - Hosting and startup infrastructures for applications.
 * [Newtonsoft.Json] - Json.NET is a popular high-performance JSON framework for .NET
 * [Pomelo.EntityFrameworkCore.MySql] - Pomelo's MySQL database provider for Entity Framework Core.
-* [RestSharp] - Simple REST and HTTP API Clien
+* [RestSharp] - Simple REST and HTTP API Client
 * [Serilog] - Simple .NET logging with fully-structured events
 * [Swashbuckle.AspNetCore] - Swagger tools for documenting APIs built on ASP.NET Core
