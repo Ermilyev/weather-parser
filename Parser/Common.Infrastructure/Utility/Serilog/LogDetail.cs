@@ -6,7 +6,8 @@ public class LogDetail
     {
         Timestamp = DateTime.Now;
     }
-    public DateTime Timestamp { get; set; }
+
+    private DateTime Timestamp { get; set; }
     public string Message { get; set; }
 
     //WHERE

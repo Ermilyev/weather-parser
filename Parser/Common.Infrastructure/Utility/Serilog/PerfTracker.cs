@@ -18,7 +18,7 @@ public class PerfTracker
     }
 
 
-    public PerfTracker(string name, string userId, string userName, string location, string product, string layer)
+    private PerfTracker(string name, string userId, string userName, string location, string product, string layer)
     {
         _sw = Stopwatch.StartNew(); 
         _infoToLog = new LogDetail

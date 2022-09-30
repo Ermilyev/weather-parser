@@ -38,40 +38,27 @@ public class CityService
     /// <param name="cityFilter"></param>
     /// <param name="pagination"></param>
     /// <returns></returns>
-    public async Task<ActionResult<CitySummaryInfoModel>> GetListByFilterAsync(CityFilter cityFilter, Pagination pagination)
+    public async Task<ActionResult<CitySummaryInfoModel>> GetListByFilterAsync(CityFilter cityFilter,
+        Pagination pagination)
     {
-        try
-        {
-            _logger.LogInformation("Service: {Service}, Method: {Method}, Properties: Ids - {Ids}, Names - {Names}",  
-                nameof(CityService),
-                nameof(GetListByFilterAsync), 
-                cityFilter.Ids,
-                cityFilter.Names);
-            
-            var (ids, names) = cityFilter;
-            var (skip, limit) = pagination;
-            var entities = await _cityRepository.GetByFilterAsync(ids?.ToArray(), names?.ToArray());
-            
-            var count = entities.Count;
-            var cities = entities
-                .OrderBy(city => city.Name)
-                .Skip(skip)
-                .Take(limit ?? 100)
-                .Select(city => _mapper.Map<CityModel>(city));
+        _logger.LogInformation("Service: {Service}, Method: {Method}, Properties: Ids - {Ids}, Names - {Names}",
+            nameof(CityService),
+            nameof(GetListByFilterAsync),
+            cityFilter.Ids,
+            cityFilter.Names);
 
-            return new CitySummaryInfoModel(){CityModelList = cities.ToArray(), Count = count};
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError("Error: {Error}, Service: {Service}, Method: {Method}, Properties: Ids - {Ids}, Names - {Names}",  
-                ex.Message,
-                nameof(CityService),
-                nameof(GetListByFilterAsync), 
-                cityFilter.Ids,
-                cityFilter.Names);
-            
-            throw;
-        }
+        var (ids, names) = cityFilter;
+        var (skip, limit) = pagination;
+        var entities = await _cityRepository.GetByFilterAsync(ids?.ToArray(), names?.ToArray());
+
+        var count = entities.Count;
+        var cities = entities
+            .OrderBy(city => city.Name)
+            .Skip(skip)
+            .Take(limit ?? 100)
+            .Select(city => _mapper.Map<CityModel>(city));
+
+        return new CitySummaryInfoModel() {CityModelList = cities.ToArray(), Count = count};
     }
 
     /// <summary>
