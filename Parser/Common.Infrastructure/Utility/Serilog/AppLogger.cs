@@ -7,7 +7,7 @@ using ILogger = Serilog.ILogger;
 
 namespace Common.Infrastructure.Utility.Serilog;
 
-public class AppLogger
+public static class AppLogger
 {
     private static readonly ILogger _perfLogger;
     private static readonly ILogger _usageLogger;

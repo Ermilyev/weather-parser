@@ -2,16 +2,16 @@
 
 namespace Common.Infrastructure.Utility.Serilog;
 
-public class CustomException
+public abstract class CustomException
 {
-    public string? ExceptionName { get; set; }
-    public string? ModuleName { get; set; }
-    public string? DeclaringTypeName { get; set; }
-    public string? TargetSiteName { get; set; }
-    public string? Message { get; set; }
-    public string? StackTrace { get; set; }
-    public List<DictEntry>? Data { get; set; }
-    public CustomException? InnerException { get; set; }
+    private string? ExceptionName { get; set; }
+    private string? ModuleName { get; set; }
+    private string? DeclaringTypeName { get; set; }
+    private string? TargetSiteName { get; set; }
+    private string? Message { get; set; }
+    private string? StackTrace { get; set; }
+    private List<DictEntry>? Data { get; set; }
+    private CustomException? InnerException { get; set; }
 
     public CustomException GetBaseError()
     {
@@ -23,7 +23,7 @@ public class CustomException
         return ToBetterString();
     }
 
-    public string ToBetterString(string prepend = null)
+    private string ToBetterString(string? prepend = null)
     {
         var exceptionMessage = new StringBuilder();
 
@@ -59,7 +59,7 @@ public class CustomException
     }
 }
 
-public class DictEntry
+public abstract class DictEntry
 {
     public string? Key { get; set; }
     public string? Value { get; set; }
