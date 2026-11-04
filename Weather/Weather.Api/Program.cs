@@ -17,7 +17,7 @@ builder.Services
     });
 
 builder.Services.AddSwagger();
-builder.Services.AddApiVersioning().AddApiExplorer(opt => { opt.SubstituteApiVersionInUrl = true; });
+builder.Services.AddApiVersioning().AddMvc().AddApiExplorer(opt => { opt.SubstituteApiVersionInUrl = true; });
 builder.Services.AddHealthChecks();
 
 builder.Services.AddInfrastructure(builder.Configuration);
